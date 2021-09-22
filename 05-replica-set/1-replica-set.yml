@@ -8,7 +8,7 @@ metadata:
     zone: prod
     version: v1
 spec:
-  replicas: 2
+  replicas: 02
   selector:
     matchLabels: 
       app: hello    
