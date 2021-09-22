@@ -21,6 +21,9 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
+## 6 Create Key oon EC2
+ssh-keygen -f .ssh/id_rsa
+
 ## 6 Create private hosted zone in AWS Route53
 Here you define your DNS 
 
