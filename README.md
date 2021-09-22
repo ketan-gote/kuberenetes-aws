@@ -1,1 +1,1 @@
-# kuberenetes-aws
+# Kubernetes on AWS using Kops
