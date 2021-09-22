@@ -10,7 +10,7 @@ metadata:
 spec:
   containers:
   - name: hello-cntr
-    image: metamagicglobal/hello:v1.0
+    image: ketangote/helloworld:latest
     imagePullPolicy: IfNotPresent
     ports:
      - containerPort: 80
