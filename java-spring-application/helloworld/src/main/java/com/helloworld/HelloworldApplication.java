@@ -1,5 +1,7 @@
 package com.helloworld;
 
+import java.util.Date;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
@@ -15,16 +17,20 @@ public class HelloworldApplication {
 		SpringApplication.run(HelloworldApplication.class, args);
 	}
 	
-	private static final String greetings = "<b>Welcome to HelloWorld v2</b>";
+	private static final String greetings = "<b>Welcome to HelloWorld v3</b>";
+	
+	private static final String up = "Helloworld Application Is UP!";
 	
 	@GetMapping("/")
 	public ResponseEntity<String> greetings(){
+		System.out.println(new Date()+" | "+greetings);
 		return new ResponseEntity<String>(greetings, HttpStatus.OK);
 	}
 
 	@GetMapping("/live")
 	public ResponseEntity<String> liveness(){
-		return new ResponseEntity<String>("Helloworld Application Is UP!", HttpStatus.OK);
+		System.out.println(new Date()+" | "+up);
+		return new ResponseEntity<String>(up, HttpStatus.OK);
 	}
 	
 }

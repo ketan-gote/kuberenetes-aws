@@ -8,7 +8,7 @@ A Pod is a group of one or more containers, with shared storage and network reso
 
 
 ### Demo POD
-kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/create-first-pod/1-pod.yml
+kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/03-create-first-pod/1-pod.yml
 
 ### Command go list  PODS 
   - kubectl get pods --all-namespaces
