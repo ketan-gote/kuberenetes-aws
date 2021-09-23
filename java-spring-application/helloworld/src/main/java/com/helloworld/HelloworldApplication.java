@@ -15,7 +15,7 @@ public class HelloworldApplication {
 		SpringApplication.run(HelloworldApplication.class, args);
 	}
 	
-	private static final String greetings = "<b>Welcome to HelloWorld v1</b>";
+	private static final String greetings = "<b>Welcome to HelloWorld v2</b>";
 	
 	@GetMapping("/")
 	public ResponseEntity<String> greetings(){
