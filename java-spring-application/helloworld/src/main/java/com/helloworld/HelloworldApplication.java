@@ -26,6 +26,8 @@ public class HelloworldApplication {
 	@GetMapping("/")
 	public ResponseEntity<String> greetings(){
 		System.out.println(new Date()+" | "+greetings);
+		System.out.println("DB_USER_NAME="+System.getenv("DB_USER_NAME"));
+		System.out.println("DB_PASSWORD="+System.getenv("DB_PASSWORD"));
 		return new ResponseEntity<String>(greetings, HttpStatus.OK);
 	}
 
