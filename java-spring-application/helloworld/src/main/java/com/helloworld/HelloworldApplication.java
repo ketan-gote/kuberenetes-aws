@@ -21,6 +21,8 @@ public class HelloworldApplication {
 	
 	private static final String up = "Helloworld Application Is UP!";
 	
+	private static final String ready = "Helloworld Application Is READY!";
+
 	@GetMapping("/")
 	public ResponseEntity<String> greetings(){
 		System.out.println(new Date()+" | "+greetings);
@@ -31,6 +33,12 @@ public class HelloworldApplication {
 	public ResponseEntity<String> liveness(){
 		System.out.println(new Date()+" | "+up);
 		return new ResponseEntity<String>(up, HttpStatus.OK);
+	}
+	
+	@GetMapping("/readiness")
+	public ResponseEntity<String> readiness(){
+		System.out.println(new Date()+" | "+ready);
+		return new ResponseEntity<String>(ready, HttpStatus.OK);
 	}
 	
 }
