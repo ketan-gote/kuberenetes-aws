@@ -10,3 +10,5 @@ OR
 kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/09-secrets/create-secret.yml
 
 List all secret using : kubectl get secret --namespace microserviceworkshop
+
+Delete Secret using kubectl delete secret db-secret --namespace microserviceworkshop
