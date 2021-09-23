@@ -22,4 +22,9 @@ public class HelloworldApplication {
 		return new ResponseEntity<String>(greetings, HttpStatus.OK);
 	}
 
+	@GetMapping("/live")
+	public ResponseEntity<String> liveness(){
+		return new ResponseEntity<String>("Helloworld Application Is UP!", HttpStatus.OK);
+	}
+	
 }
