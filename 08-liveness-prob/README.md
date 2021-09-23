@@ -5,7 +5,7 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
 
 ### Create 
-kubectl apply -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/08-liveness-prob/liveness-prob.yml
+kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/08-liveness-prob/liveness-prob.yml
 
 - kubectl get deployments --namespace microserviceworkshop : This will show was deployment created
 - kubectl rollout status deployment/helloworld-deployment --namespace microserviceworkshop : This shows rollout status

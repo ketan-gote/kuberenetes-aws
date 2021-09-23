@@ -10,7 +10,7 @@ With Kubernetes you don't need to modify your application to use an unfamiliar s
 In Kubernetes, a Service is an abstraction which defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service). The set of Pods targeted by a Service is usually determined by a selector
 
 ### Demo Service
-kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/create-first-pod/1-service.yml
+kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/04-create-service/1-service.yml
 
 This will automatically create Classic Load Balancer on AWS, once it is created go to Route 53 and define sub domain and map to new load balancer.
 

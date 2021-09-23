@@ -18,7 +18,7 @@ kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/m
 
 
 ### Delete Demo POD
-kubectl delete -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/create-first-pod/1-pod.yml
+kubectl delete -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/03-create-first-pod/1-pod.yml
 
 
 
