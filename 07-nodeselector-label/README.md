@@ -1,6 +1,8 @@
 # Nodeselector
 
-You can deploy POD on specific node.
+https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+
+You can constrain a Pod so that it can only run on particular set of Node(s). There are several ways to do this and the recommended approaches all use label selectors to facilitate the selection.
 
 First you need to add label to node using below command
 - kubectl get nodes --show-labels : This show labels for nodes

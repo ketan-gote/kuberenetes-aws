@@ -1,6 +1,13 @@
 # POD
 
-### Create Demo POD
+https://kubernetes.io/docs/concepts/workloads/pods/
+
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+
+A Pod is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
+
+
+### Demo POD
 kubectl create -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/create-first-pod/1-pod.yml
 
 ### Command go list  PODS 

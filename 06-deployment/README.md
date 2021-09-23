@@ -1,5 +1,9 @@
 # Deployment 
 
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
+
 ### Create 
 kubectl apply -f https://raw.githubusercontent.com/ketan-gote/kuberenetes-aws/main/06-deployment/deployment.yml
 
