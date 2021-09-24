@@ -1,1 +1,0 @@
-https://www.bogotobogo.com/DevOps/Docker/Docker-Kubernetes-kops-on-AWS-Ingress.php

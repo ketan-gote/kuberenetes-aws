@@ -16,4 +16,4 @@ spec:
       - path: /productreviewms/
         backend:
           serviceName: productreviewms-svc
-          servicePort: 80    
+          servicePort: 80
