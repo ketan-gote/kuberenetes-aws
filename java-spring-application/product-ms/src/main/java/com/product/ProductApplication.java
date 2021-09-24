@@ -25,6 +25,7 @@ public class ProductApplication {
 	private final LinkedHashMap<String, String> products = new LinkedHashMap<String, String>();
 
 	public static void main(String[] args) {
+	    System.setProperty("server.servlet.context-path", "/productms");
 		SpringApplication.run(ProductApplication.class, args);
 	}
 
@@ -69,7 +70,7 @@ public class ProductApplication {
 		List<String> reviews = new ArrayList<String>();
 
 		reviews = restTemplate()
-				.getForEntity("http://productreview-svc/product/" + prdId + "/review", new ArrayList().getClass())
+				.getForEntity("http://productreviewms-svc/productreviewms/product/" + prdId + "/review", new ArrayList().getClass())
 				.getBody();
 
 		return reviews;

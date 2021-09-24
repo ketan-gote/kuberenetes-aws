@@ -24,6 +24,7 @@ public class ProductReviewApplication {
 	private final LinkedHashMap<String, List<String>> products = new LinkedHashMap<String, List<String>>();
 
 	public static void main(String[] args) {
+	    System.setProperty("server.servlet.context-path", "/productreviewms");
 		SpringApplication.run(ProductReviewApplication.class, args);
 	}
 
