@@ -39,8 +39,8 @@ kops create cluster \
 --state=s3://ketan-gote.link \
 --zones=ap-south-1a,ap-south-1b \
 --node-count=1 \
---node-size=t2.micro \
---master-size=t2.micro \
+--node-size=t2.medium \
+--master-size=t2.medium \
 --dns-zone=ketan-gote.link
 
 OR
