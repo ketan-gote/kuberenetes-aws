@@ -29,7 +29,7 @@ public class ProductApplication {
 		SpringApplication.run(ProductApplication.class, args);
 	}
 
-	private static final String greetings = "<b>Welcome To Product MS v1</b>";
+	private static final String greetings = "<b>Welcome To Product MS v2</b>";
 
 	private static final String up = "Product MS Is Live!";
 

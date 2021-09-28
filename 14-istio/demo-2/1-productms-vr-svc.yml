@@ -10,10 +10,18 @@ spec:
   - microserviceworkshop-gateway
   http:
   - match:
-    - uri:
-        prefix: /productms
+    - headers:
+        end-user:
+          exact: johndoe
     route:
     - destination:
         host: productms-svc.microserviceworkshop.svc.cluster.local
+        subset: v2 # match v2 only
         port:
-          number: 80  
+          number: 80
+  - route: 
+    - destination:
+        host: productms-svc.microserviceworkshop.svc.cluster.local
+        subset: v1 # match v1 only
+        port:
+          number: 80
